@@ -11,6 +11,7 @@ import android.widget.LinearLayout;
 import com.rongdagaoke.libray.manager.OnRetryListener;
 import com.rongdagaoke.libray.manager.OnShowHideViewListener;
 import com.rongdagaoke.libray.manager.StatusLayoutManager;
+import com.rongdagaoke.mylibrary.R;
 
 
 /**
