@@ -1,8 +1,8 @@
 apply plugin: 'com.android.library'
-// JitPack Maven
+//启用Jitpack 插件
 apply plugin: 'com.github.dcendents.android-maven'
-// Your Group
-group='com.github.l16426434'
+//设置Jitpack发布的Group
+group = 'com.github.l16426434'
 
 android {
     compileSdkVersion 25
@@ -25,4 +25,27 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:25.2.0'
     compile 'com.android.support.constraint:constraint-layout:1.0.1'
+}
+// build a jar with source files
+task sourcesJar(type: Jar) {
+    from android.sourceSets.main.java.srcDirs
+    classifier = 'sources'
+}
+
+task javadoc(type: Javadoc) {
+    failOnError false
+    source = android.sourceSets.main.java.sourceFiles
+    classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
+    classpath += configurations.compile
+}
+
+// build a jar with javadoc
+task javadocJar(type: Jar, dependsOn: javadoc) {
+    classifier = 'javadoc'
+    from javadoc.destinationDir
+}
+
+artifacts {
+    archives sourcesJar
+    archives javadocJar
 }

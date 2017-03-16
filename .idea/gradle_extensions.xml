@@ -34,6 +34,7 @@
             <task name="packageReleaseRenderscript" type="org.gradle.api.tasks.Sync">&lt;i&gt;Task group: other&lt;i&gt;</task>
             <task name="mergeReleaseProguardFiles" type="com.android.build.gradle.internal.tasks.MergeFileTask">&lt;i&gt;Task group: other&lt;i&gt;</task>
             <task name="incrementalDebugJavaCompilationSafeguard" type="com.android.build.gradle.tasks.factory.IncrementalSafeguard">&lt;i&gt;Task group: other&lt;i&gt;</task>
+            <task name="javadocJar" type="org.gradle.api.tasks.bundling.Jar">&lt;i&gt;Task group: other&lt;i&gt;</task>
             <task name="deviceCheck">Runs all device checks using Device Providers and Test Servers.&lt;p&gt;&lt;i&gt;Task group: verification&lt;i&gt;</task>
             <task name="resolveReleaseDependencies" type="com.android.build.gradle.internal.tasks.ResolveDependenciesTask">&lt;i&gt;Task group: other&lt;i&gt;</task>
             <task name="dependencies" type="org.gradle.api.tasks.diagnostics.DependencyReportTask">Displays all dependencies declared in root project 'Libray'.&lt;p&gt;&lt;i&gt;Task group: help&lt;i&gt;</task>
@@ -63,6 +64,7 @@
             <task name="preDebugAndroidTestBuild">&lt;i&gt;Task group: other&lt;i&gt;</task>
             <task name="extractDebugAnnotations" type="com.android.build.gradle.tasks.ExtractAnnotations">Extracts Android annotations for the debug variant into the archive file&lt;p&gt;&lt;i&gt;Task group: build&lt;i&gt;</task>
             <task name="processDebugAndroidTestJavaRes" type="org.gradle.api.tasks.Sync">&lt;i&gt;Task group: other&lt;i&gt;</task>
+            <task name="javadoc" type="org.gradle.api.tasks.javadoc.Javadoc">&lt;i&gt;Task group: other&lt;i&gt;</task>
             <task name="processReleaseUnitTestJavaRes" type="org.gradle.api.tasks.Sync">&lt;i&gt;Task group: other&lt;i&gt;</task>
             <task name="javaPreCompileDebugAndroidTest" type="com.android.build.gradle.tasks.JavaPreCompileTask">&lt;i&gt;Task group: other&lt;i&gt;</task>
             <task name="transformClassesAndResourcesWithSyncLibJarsForRelease" type="com.android.build.gradle.internal.pipeline.TransformTask">&lt;i&gt;Task group: other&lt;i&gt;</task>
@@ -116,6 +118,7 @@
             <task name="generateDebugAndroidTestResValues" type="com.android.build.gradle.tasks.GenerateResValues">&lt;i&gt;Task group: other&lt;i&gt;</task>
             <task name="transformNativeLibsWithMergeJniLibsForDebugAndroidTest" type="com.android.build.gradle.internal.pipeline.TransformTask">&lt;i&gt;Task group: other&lt;i&gt;</task>
             <task name="mergeReleaseShaders" type="com.android.build.gradle.tasks.MergeSourceSetFolders">&lt;i&gt;Task group: other&lt;i&gt;</task>
+            <task name="sourcesJar" type="org.gradle.api.tasks.bundling.Jar">&lt;i&gt;Task group: other&lt;i&gt;</task>
             <task name="androidDependencies" type="com.android.build.gradle.internal.tasks.DependencyReportTask">Displays the Android dependencies of the project.&lt;p&gt;&lt;i&gt;Task group: Android&lt;i&gt;</task>
             <task name="compileDebugAndroidTestNdk" type="com.android.build.gradle.tasks.NdkCompile">&lt;i&gt;Task group: other&lt;i&gt;</task>
             <task name="compileDebugUnitTestSources">&lt;i&gt;Task group: build&lt;i&gt;</task>
@@ -219,6 +222,7 @@
             <task name="packageReleaseRenderscript" type="org.gradle.api.tasks.Sync">&lt;i&gt;Task group: other&lt;i&gt;</task>
             <task name="mergeReleaseProguardFiles" type="com.android.build.gradle.internal.tasks.MergeFileTask">&lt;i&gt;Task group: other&lt;i&gt;</task>
             <task name="incrementalDebugJavaCompilationSafeguard" type="com.android.build.gradle.tasks.factory.IncrementalSafeguard">&lt;i&gt;Task group: other&lt;i&gt;</task>
+            <task name="javadocJar" type="org.gradle.api.tasks.bundling.Jar">&lt;i&gt;Task group: other&lt;i&gt;</task>
             <task name="deviceCheck">Runs all device checks using Device Providers and Test Servers.&lt;p&gt;&lt;i&gt;Task group: verification&lt;i&gt;</task>
             <task name="resolveReleaseDependencies" type="com.android.build.gradle.internal.tasks.ResolveDependenciesTask">&lt;i&gt;Task group: other&lt;i&gt;</task>
             <task name="dependencies" type="org.gradle.api.tasks.diagnostics.DependencyReportTask">Displays all dependencies declared in project ':app'.&lt;p&gt;&lt;i&gt;Task group: help&lt;i&gt;</task>
@@ -248,6 +252,7 @@
             <task name="preDebugAndroidTestBuild">&lt;i&gt;Task group: other&lt;i&gt;</task>
             <task name="extractDebugAnnotations" type="com.android.build.gradle.tasks.ExtractAnnotations">Extracts Android annotations for the debug variant into the archive file&lt;p&gt;&lt;i&gt;Task group: build&lt;i&gt;</task>
             <task name="processDebugAndroidTestJavaRes" type="org.gradle.api.tasks.Sync">&lt;i&gt;Task group: other&lt;i&gt;</task>
+            <task name="javadoc" type="org.gradle.api.tasks.javadoc.Javadoc">&lt;i&gt;Task group: other&lt;i&gt;</task>
             <task name="processReleaseUnitTestJavaRes" type="org.gradle.api.tasks.Sync">&lt;i&gt;Task group: other&lt;i&gt;</task>
             <task name="javaPreCompileDebugAndroidTest" type="com.android.build.gradle.tasks.JavaPreCompileTask">&lt;i&gt;Task group: other&lt;i&gt;</task>
             <task name="transformClassesAndResourcesWithSyncLibJarsForRelease" type="com.android.build.gradle.internal.pipeline.TransformTask">&lt;i&gt;Task group: other&lt;i&gt;</task>
@@ -299,6 +304,7 @@
             <task name="generateDebugAndroidTestResValues" type="com.android.build.gradle.tasks.GenerateResValues">&lt;i&gt;Task group: other&lt;i&gt;</task>
             <task name="transformNativeLibsWithMergeJniLibsForDebugAndroidTest" type="com.android.build.gradle.internal.pipeline.TransformTask">&lt;i&gt;Task group: other&lt;i&gt;</task>
             <task name="mergeReleaseShaders" type="com.android.build.gradle.tasks.MergeSourceSetFolders">&lt;i&gt;Task group: other&lt;i&gt;</task>
+            <task name="sourcesJar" type="org.gradle.api.tasks.bundling.Jar">&lt;i&gt;Task group: other&lt;i&gt;</task>
             <task name="androidDependencies" type="com.android.build.gradle.internal.tasks.DependencyReportTask">Displays the Android dependencies of the project.&lt;p&gt;&lt;i&gt;Task group: Android&lt;i&gt;</task>
             <task name="compileDebugAndroidTestNdk" type="com.android.build.gradle.tasks.NdkCompile">&lt;i&gt;Task group: other&lt;i&gt;</task>
             <task name="compileDebugUnitTestSources">&lt;i&gt;Task group: build&lt;i&gt;</task>
