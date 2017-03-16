@@ -1,10 +1,13 @@
 apply plugin: 'com.android.library'
+// JitPack Maven
+apply plugin: 'com.github.dcendents.android-maven'
+// Your Group
+group='com.github.l16426434'
 
 android {
     compileSdkVersion 25
     buildToolsVersion "25.0.2"
     defaultConfig {
-        applicationId "com.rongdagaoke.libray"
         minSdkVersion 14
         targetSdkVersion 25
         versionCode 1
